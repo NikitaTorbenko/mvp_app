@@ -1,0 +1,23 @@
+@mixin PC() {
+  @media screen and (max-width: 1200px) {
+    @content
+  }
+}
+
+@mixin laptop() {
+  @media screen and (max-width: 992px) {
+    @content
+  }
+}
+
+@mixin tab() {
+  @media screen and (max-width: 768px) {
+    @content
+  }
+}
+
+@mixin phones() {
+  @media screen and (max-width: 576px) {
+    @content
+  }
+}

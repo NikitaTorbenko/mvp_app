@@ -1,0 +1,23 @@
+mixin fileUpload()
+    .file_upload_wrap
+        form.file_upload
+            .file_upload__brand
+                input(type='text' name='file_brand' placeholder='марка')
+            .file_upload__model
+                input(type='text' name='file_model' placeholder='модель')
+            .file_upload__year
+                input(type='text' name='file_year' placeholder='год выпуска')
+            .file_upload__price
+                input(type='text' name='file_price' placeholder='цена')
+            .file_upload__miles
+                input(type='text' name='file_miles' placeholder='пробег')
+            .file_upload__newCar
+                label с салона
+                    input(type='radio' name='file_newCar' value='new')
+            .file_upload__usedCar
+                label б/у
+                    input(type='radio' name='file_newCar' value='used')
+            .file_upload__imageUrl
+                input(type='file' accept='image/*' name='file_imageUrl' placeholder='фото').file_imageUrl
+            .file__submit
+                input(type='submit' name='form_image_send' value ='загрузить')

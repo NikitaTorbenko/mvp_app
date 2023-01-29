@@ -1,0 +1,30 @@
+@import "../adaptive/mixins";
+
+.right_side {
+  width: 70%;
+  height: 100%;
+  background-color: #f1f1f1;
+  transition: all .3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 100px;
+
+
+  @include PC{
+    background-color: blue;
+  }
+  @include laptop{
+    background-color: #b6d91e;
+  }
+  @include tab{
+    background-color: #bb1d9b;
+  }
+  @include phones{
+    background-color: #dc550e;
+  }
+
+
+}
+

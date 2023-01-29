@@ -1,0 +1,80 @@
+@import "../adaptive/mixins";
+
+.card {
+  width: 700px;
+  padding: 25px 75px 25px 25px;
+  margin-bottom: 40px;
+  min-height: 150px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+  0 0  0 2px rgb(255,255,255),
+  0.3em 0.3em 1em rgba(0,0,0,0.3);
+
+ /* @include PC{
+    background-color: blue;
+  }
+  @include laptop{
+    background-color: #b6d91e;
+  }
+  @include tab{
+    background-color: #bb1d9b;
+  }
+  @include phones{
+    background-color: #dc550e;
+  }*/
+
+  &__image {
+    width: 100%;
+  }
+
+  &__title {
+  color: red
+  }
+
+  &__model {
+    color: red
+  }
+
+  &__price {
+    color: red
+  }
+
+  &__year {
+    color: red
+  }
+
+  &__mileage {
+    color: red
+  }
+
+  &__usage {
+    color: red
+  }
+  &__id {
+    color: red
+  }
+
+
+}
+
+.card_block_image {
+  width: 35%;
+}
+
+.card_img_wrap {
+  width: 100%;
+}
+
+.card_block_main_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card_block_secondary_info {
+  @extend .card_block_main_info;
+}

@@ -1,0 +1,140 @@
+.left_middle {
+  width: 90%;
+  height: 300px;
+  background-color: #ffffff;
+  margin-top: 100px;
+  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+  0 0  0 2px rgb(255,255,255),
+  0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.main_controls {
+  width: 100%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__item {
+    color: #282727;
+    width: 100%;
+    padding: 20px 50px;
+    text-align: center;
+    border-bottom: 1px solid #464444;
+  }
+  &__item:hover{
+    border-bottom: none;
+    border-right: none;
+  }
+  &__item:last-child{
+    border-right: none;
+    border-left: 1px solid #464444;
+  }
+
+  &__item--active {
+    color: red
+  }
+}
+
+.controls_content {
+  height: 100%;
+
+  &_auto {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(255,255,255),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+  }
+
+  &_moto {
+    @extend .controls_content_auto
+  }
+
+}
+.auto {
+  display: none;
+}
+.active {
+  background-color: #4a4c4d;
+  color: #fff
+}
+
+///
+
+
+
+form.moto {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: flex-start;
+}
+.auto_brand_select {
+  width: 48%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  outline: 1px solid #b2ddfc;
+  border-radius: 5px;
+  color: #3b3c3f;
+  font-weight: 600;
+  font-family: Neutral sans-serif;
+}
+.auto_model_select {
+  @extend .auto_brand_select;
+}
+.auto_year_select {
+  @extend .auto_brand_select;
+}
+.auto_price_select {
+  @extend .auto_brand_select;
+}
+.autoNewOrUsed {
+  width: 96%;
+  height: 45px;
+  color: #3b3c3f;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 30px;
+}
+.radio_new {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 70%;
+}
+.radio_used {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 70%;
+}
+
+.auto_submit {
+  width: 96%;
+  position: relative;
+
+  &__find {
+    position: absolute;
+    padding: 10px 30px;
+    background-color: #4a4c4d;
+    color: #fff;
+    right: 20px;
+    top: 30px;
+    font-family: Neutral sans-serif;
+  }
+  &__find:hover{
+    cursor: pointer;
+  }
+}
